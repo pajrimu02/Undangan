@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background: linear-gradient(to right, #6e1a23 75%, #f3ece4 25%);
+      }
+
+      .img img {
+        display: block;
+        position: absolute;
+        height: 100vh;
+      }
+
+      .bungga img {
+        position: absolute;
+        display: flex;
+        margin-left: 130vh;
+        margin-top: -25vh;
+        height: 500px;
+      }
+
+      .text {
+        position: absolute;
+        right: 20px;
+        top: 36vh;
+        font-size: 35px;
+        font-family: Arial, sans-serif;
+        color: #3a2f2f;
+        line-height: 1.5;
+        font-size: 15px;
+      }
+
+      .barcode img {
+        position: absolute;
+        top: 65vh;
+        right: 90px;
+        height: 200px;
+      }
+
+      .barcode P {
+        position: absolute;
+        top: 94vh;
+        right: 97px;
+        font-weight: bold;
+      }
+
+      .nama h1 {
+        color: white;
+        position: absolute;
+        top: 10vh;
+        left: 70vh;
+      }
+
+      .text1 img {
+        position: absolute;
+        top: 4vh;
+        left: 60vh;
+        height: 60px;
+      }
+
+      .nama p {
+        color: white;
+        position: absolute;
+        top: 15vh;
+        left: 70vh;
+        font-style: italic;
+      }
+
+      .nama2 h1 {
+        color: white;
+        position: absolute;
+        top: 25vh;
+        left: 70vh;
+      }
+
+      .text2 img {
+        position: absolute;
+        top: 21vh;
+        left: 62vh;
+        height: 50px;
+      }
+
+      .nama2 p {
+        color: white;
+        position: absolute;
+        top: 30vh;
+        left: 70vh;
+        font-style: italic;
+      }
+
+      .text3 p {
+        color: white;
+        text-align: center;
+        position: absolute;
+        top: 40vh;
+        left: 85vh;
+        font-size: 20px;
+      }
+
+      .tanggal img {
+        position: absolute;
+        top: 50vh;
+        left: 62vh;
+        height: 250px;
+      }
+
+      .text4 {
+        color: white;
+        position: absolute;
+        top: 90vh;
+        left: 80vh;
+        height: 50px;
+      }
+      .text5 {
+        position: absolute;
+        top: 50vh;
+        left: 95vh;
+        color: white;
+        font-family: Arial;
+      }
+
+      .text5 h3 {
+        margin-bottom: 10px;
+        font-size: 22px;
+      }
+
+      .text5 p {
+        margin: 5px 0;
+        font-size: 16px;
+      }
+      .text6 {
+        position: absolute;
+        top: 70vh;
+        left: 95vh;
+        color: white;
+        font-family: Arial;
+      }
+
+      .text6 h3 {
+        margin-bottom: 10px;
+        font-size: 22px;
+      }
+
+      .text6 p {
+        margin: 5px 0;
+        font-size: 16px;
+      }
+      /* ===================== MOBILE (max-width: 600px) ===================== */
+      @media (max-width: 600px) {
+        body {
+          background: #6e1a23;
+          height: auto;
+          padding-bottom: 50px;
+        }
+
+        .img img {
+          position: relative;
+          width: 100%;
+          height: auto;
+        }
+
+        .bungga img {
+          position: relative;
+          margin: 20px auto;
+          display: block;
+          width: 60%;
+          height: auto;
+        }
+
+        .text {
+          position: relative;
+          top: 0;
+          right: 0;
+          padding: 20px;
+          text-align: left;
+          font-size: 14px;
+          color: white;
+        }
+
+        .barcode img {
+          position: relative;
+          top: 0;
+          right: 0;
+          display: block;
+          margin: 20px auto;
+          width: 55%;
+          height: auto;
+        }
+
+        .barcode p {
+          position: relative;
+          top: 0;
+          right: 0;
+          text-align: center;
+          margin-top: 10px;
+          color: white;
+        }
+
+        /* Bagian nama */
+        .text1 img,
+        .text2 img {
+          position: relative;
+          left: 0;
+          top: 0;
+          width: 40%;
+          margin: 20px auto;
+          display: block;
+        }
+
+        .nama,
+        .nama2 {
+          position: relative;
+          left: 0;
+          top: 0;
+          text-align: center;
+          color: white;
+          margin-bottom: 20px;
+        }
+
+        .nama h1,
+        .nama2 h1 {
+          font-size: 18px;
+          position: relative;
+        }
+
+        .nama p,
+        .nama2 p {
+          font-size: 14px;
+          position: relative;
+          font-style: italic;
+        }
+
+        .text3 p {
+          position: relative;
+          left: 0;
+          top: 0;
+          font-size: 18px;
+          padding: 10px;
+          text-align: center;
+        }
+
+        .tanggal img {
+          position: relative;
+          top: 0;
+          left: 0;
+          width: 80%;
+          display: block;
+          margin: 20px auto;
+        }
+
+        .text4 {
+          position: relative;
+          top: 0;
+          left: 0;
+          padding: 10px 15px;
+          text-align: center;
+        }
+
+        .text5,
+        .text6 {
+          position: relative;
+          left: 0;
+          top: 0;
+          margin: 20px;
+          padding: 10px;
+          text-align: left;
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 8px;
+        }
+
+        .text5 h3,
+        .text6 h3 {
+          font-size: 18px;
+        }
+
+        .text5 p,
+        .text6 p {
+          font-size: 14px;
+        }
+      }
+      /* ===================== TABLET (max-width: 900px) ===================== */
+      @media (max-width: 900px) {
+        body {
+          background: #6e1a23;
+        }
+
+        .img img {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+
+        .bungga img {
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          width: 40%;
+        }
+
+        .text {
+          right: 0;
+          left: 0;
+          top: auto;
+          margin-top: 20px;
+          text-align: center;
+          font-size: 16px;
+          padding: 10px;
+          color: white;
+        }
+
+        .barcode img {
+          position: relative;
+          margin: 20px auto;
+          width: 35%;
+        }
+
+        .barcode p {
+          right: 0;
+          top: 0;
+          text-align: center;
+        }
+
+        .text5,
+        .text6 {
+          left: 0;
+          top: 0;
+          margin: 20px;
+          padding: 15px;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="img">
+        <img src="img/Wedding day.jpeg" alt="fotokiri" />
+      </div>
+      <div class="bungga">
+        <img src="img/foto2.png" alt="bungga" />
+      </div>
+      <div class="text">
+        <h2>TURUT MENGUNDANG</h2>
+        <p>1. Keluarga Besar Bpk Aki Utom Busstom</p>
+        <p>2. Keluarga Besar Bpk Aki Pamaksudin</p>
+        <p>3. Bpk Endang Adi Hidayat (Kades Kertaraharja)</p>
+        <p>4. Bpk Dadun kohar., Mpd (KS SDN Bolenglang 1)</p>
+        <p>5. Bpk Asep Rustiaawan, S.Pd</p>
+      </div>
+      <div class="barcode">
+        <img src="img/barcode.png" alt="barcode" />
+        <p>SCAN BARCODE LOKASI</p>
+      </div>
+    </section>
+    <section>
+      <div class="text1">
+        <img src="img/nama1.png" alt="nama1" />
+      </div>
+      <div class="nama">
+        <h1>Dikdik Ali Firmansyah S.Pd., Gr</h1>
+        <p>Putra ke 2 dari Bapak Rahmat S.Pd(Alm) dan Ibu Juaningsih</p>
+      </div>
+      <div class="text2">
+        <img src="img/nama2.png" alt="nama2" />
+      </div>
+      <div class="nama2">
+        <h1>Wina Rahmawati A.Md. Keb</h1>
+        <p>Putra ke 1 dari Bapak Bubung dan Ibu Sa'adah</p>
+      </div>
+      <div class="text3">
+        <p>
+          INVITE YOUT TO <br />
+          THEIR WEDDING CELEBRATION
+        </p>
+      </div>
+      <div class="tanggal">
+        <img src="img/foto3.png" alt="tanggal" />
+      </div>
+      <div class="text4">
+        <p>
+          Merupakan suatu kehormatan serta kebahagiaan bagi kami apabila <br />
+          Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu.
+        </p>
+      </div>
+      <div class="text5">
+        <h3>TASYAKURAN</h3>
+        <p>Kamis 15 Januari 2026</p>
+        <p>Pukul : 08.00 WIB - selesai</p>
+        <p>
+          Kp. Balenglang II RT/RW 004/001 Desa Kertaraharja,<br />
+          Kecamatan Pagelaran, Kabupaten Cianjur
+        </p>
+      </div>
+      <div class="text6">
+        <h3>RESEPSI NIKAH:</h3>
+        <p>Minggu, 18 Januari 2026</p>
+        <p>Pukul 10.00 WIB - Selesai</p>
+        <p>Kp. Kebonpeuteuy 001/002 Desa Kebonpeuteuy Kec. Gekbrong</p>
+      </div>
+    </section>
+  </body>
+</html>
